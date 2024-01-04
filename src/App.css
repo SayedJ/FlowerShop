@@ -6,6 +6,32 @@
   height: 40vmin;
   pointer-events: none;
 }
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+}
+label{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 10px;
+  
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -41,6 +67,17 @@ select{
 
   gap: 20px;
 }
+.filters{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  padding: 10px;
+  gap: 20px;
+  height: 150px;
+}
+
 .occasionpicker{
   display: flex;
   justify-content: center;
@@ -51,23 +88,137 @@ select{
 
 section{
   margin: 20px 0;
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
+  flex-wrap: wrap;
   
 }
-.item{
-  margin: 20px 0;
-  width: 80%;
+section .item{
+  width: 20%;
+  height: 250px;
+  border: #96999e 1px solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  border-radius: 5px;
+  padding: 5px;
+
 }
+section .item a{
+  display: flex;
+ 
+  
+}
+section .item a button {
+  margin-left: auto;
+  
+}
+section .item img{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.item-info{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+}
+.item-info h3{
+  font-size: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+
+}
+.item-info p{
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.item-info button {
+  padding: 2px 15px;
+  background-color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-shadow: none;
+  border-style: none;
+  border: #161616 1px solid;
+  border-radius: 3px;
+  
+   
+}
+.item-info a{
+  
+
+
+}
+
+.user-form{
+  margin-top: 20px;
+  background-color: lavender;
+  width: 40%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input{
+  width: 100%;
+margin: 5px 5px 10px 0;
+height: 20px;
+}
+.item-clicked{
+    width: 100%;
+    gap: 0;
+
+
+}
+.item-clicked .item{
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  height:250px;
+  flex-wrap: wrap;
+
+}
+.item-clicked .item h3{
+  margin: 2px;
+
+}
+.item-clicked .item p{
+
+  margin: 2px;
+}
+
+.item-clicked  .item img{
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  flex: 0 0 100%;
+  margin: 0 10px;
+}
+
+
+.form-button{
+  margin-right: 0;
+  margin-left: auto;
+  background-color: white;
+  color: black;
+  box-shadow: none;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+  
 
 @keyframes App-logo-spin {
   from {

@@ -34,9 +34,11 @@ const FilterSearchPage = () => {
 
   return (
     <div className='filteredSearch'>
+      <div className='filters'>
             <OccasionPicker occasions={occasions} onOccasionChange={handleOccasionChange} />
             <PriceFilter minPrice={minPrice} maxPrice={maxPrice} onPriceChange={handlePriceChange} />
             <ShopProximity postalCode={postalCode} distance={distance} onPostalCodeChange={handlePostalCodeChange} onDistanceChange={handleDistanceChange} />
+      </div>
             <FlowerList
               flowers={flowerData}
               selectedOccasion={selectedOccasion}

@@ -6,7 +6,7 @@ import flowerData from '../../Data/FlowerData';
 const RecipientForm = (props) => {
   const { flowerId } = useParams();
   const flower = flowerData.find((e) => e.id == flowerId);
-  const users = getAllFormData();
+ 
 
     const [recipientData, setRecipientData] = useState({
         name: '',
@@ -44,7 +44,7 @@ const RecipientForm = (props) => {
           });
         };
     return( 
-        <div>
+    <div className='user-form'>
       <form onSubmit={handleSubmit}>
         <label>
           Name:
@@ -74,12 +74,12 @@ const RecipientForm = (props) => {
           />
         </label>
     
-        <button type="submit" value='submit'>Submit</button>
+        <button type="submit" value='submit' className='form-button'>Submit</button>
       </form>
 
       <div className='item-clicked'>
             <div key={flower.id} className='item'>
-              <img src={flower.img} alt={flower.name} />
+              <img src={flower.imgSrc} alt={flower.name} />
               <h3>{flower.name}</h3>
               <p>{flower.price}</p>
               <p>{flower.location.city}</p>
