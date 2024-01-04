@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/FlowerShop/static/css/main.ee83a9d2.css",
+    "main.js": "/FlowerShop/static/js/main.3207f523.js",
+    "static/js/787.65f0f58a.chunk.js": "/FlowerShop/static/js/787.65f0f58a.chunk.js",
+    "index.html": "/FlowerShop/index.html",
+    "main.ee83a9d2.css.map": "/FlowerShop/static/css/main.ee83a9d2.css.map",
+    "main.3207f523.js.map": "/FlowerShop/static/js/main.3207f523.js.map",
+    "787.65f0f58a.chunk.js.map": "/FlowerShop/static/js/787.65f0f58a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee83a9d2.css",
+    "static/js/main.3207f523.js"
+  ]
+}
